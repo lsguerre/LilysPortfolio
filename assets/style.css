@@ -2,6 +2,8 @@
     --primary-color: rgb(210, 148, 238); 
     --secondary-color: #fff;
     --tertiary-color: rgb(19, 161, 161);
+    --my-pink: #F2C0E5;
+    --text-shadow: text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -16,7 +18,7 @@ body {
 }
 
 header {
-    padding: 20px 35px;
+    padding: 10px 15px;
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
@@ -50,7 +52,7 @@ header a {
 }
 
 header nav {
-    margin: 5px; 0;
+    margin: 3px; 0;
 }
 
 header h1 {
@@ -58,5 +60,91 @@ header h1 {
 }
 
 header h1 {
-    text-shadow: black;
+    text-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+
 }
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    align-items: inherit;
+}
+
+header nav ul li a {
+    padding: 10 px 15px;
+    font-size: 27px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+
+}
+
+header nav ul li a:hover {
+    color: rgb(149, 115, 228);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer {
+    background: var(--my-pink);
+    width: 100%;
+    padding: 35px;
+}
+
+.reach-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: space-between;
+}
+
+.reach-me a {
+    color: var(--secondary-color)
+
+}
+
+footer a {
+    line-height: 1.5;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: var(--text-shadow);
+}
+
+footer a:hover {
+    color: var(--tertiary-color);
+    font-weight: bold;
+
+}
+
+section {
+    padding: 50px;
+}
+
+.hero {
+    background-image: url("../assets/images/bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: inherit;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero-text {
+    text-align: right;
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+    text-shadow: var(--text-shadow);
+    color: var(--secondary-color);
+    font-weight: lighter;
+}
+
