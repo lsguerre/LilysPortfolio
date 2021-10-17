@@ -7,3 +7,8 @@
 * UI scrolls to relevant area when clicked
 * resizing accounted for for differnt screen sizes
 
+
+## Deployed url
+
+https://lsguerre.github.io/LilysPortfolio/
+
