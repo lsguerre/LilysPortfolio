@@ -155,20 +155,55 @@ section {
 
 .intro h2 {
     padding: auto;
+   
 
 }
-
 .intro {
-    display: flex; 
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
+} 
+
+.intro-text {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
+.intro-text p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 70%
+}
+
+.image {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    
+}
+
+.profile-image {
+    max-width: 100%;
+    border-radius: 50%;
+    width: 300px;
+    height: 400px;
+    margin: 5px;
+    box-shadow: 0 6 5 black;
+
+}
+
+/* work section*/
 
 .flex-box-work {
     width: 100%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
+    flex: 2 70%;
 
 }
 
@@ -177,10 +212,13 @@ section {
 }
 
 .flex-image {
+    display: flex;
+    flex-wrap: wrap;
     width: 300px;
     height: 250px;  
     margin: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex: 1 12%;
 }
 
 .flex-image {
@@ -192,20 +230,106 @@ section {
     opacity: 75%;
 }
 
-
-.hover-text {
+.work-text {
     position: relative;
     display:inherit;
+    flex: 12;
 }
 
 .sample {
+
     position: relative;
     text-align: center;
     color: black;
     font-weight: bold;
 }
 
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
 
+     header h1 {
+        width: 100%;
+        text-align: center;
+    }
 
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
 
+    header nav ul li a {
+        font-size: 20px;
+    }
 
+    .intro-text {
+        flex: 100%;
+    }
+
+    footer, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .intro  {
+        justify-content: center;
+    }
+    .section-title {
+        width: 80%;
+    }
+
+    .reach-me > * {
+        flex: 0 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+  
+    .flex-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .intro-text {
+        flex: 100%;
+    }
+
+    .header nav ul li a {
+        font-size: 32px;
+    }
+    .reach-me > * {
+        flex: 0 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+ 
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .header nav ul li a, header nav ul li {
+        font-size: 44px;
+    }
+
+    .reach-me {
+    text-align: center;
+    }
+
+    .reach-me > * {
+        flex: 0 100%;
+    }
+    
+}
