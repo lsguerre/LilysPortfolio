@@ -148,3 +148,64 @@ section {
     font-weight: lighter;
 }
 
+.intro p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.intro h2 {
+    padding: auto;
+
+}
+
+.intro {
+    display: flex; 
+    align-items: center;
+}
+
+.flex-box-work {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+
+}
+
+.sample {
+    max-width: 25%;
+}
+
+.flex-image {
+    width: 300px;
+    height: 250px;  
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-image {
+    border-radius: 8px;
+    transition: .6s ease-out;
+}
+.flex-image:hover {
+    transform: translateY(10px);
+    opacity: 75%;
+}
+
+
+.hover-text {
+    position: relative;
+    display:inherit;
+}
+
+.sample {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
