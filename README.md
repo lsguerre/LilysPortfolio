@@ -12,3 +12,7 @@
 
 https://lsguerre.github.io/LilysPortfolio/
 
+github repo:
+https://github.com/lsguerre/LilysPortfolio
+
+![image](https://user-images.githubusercontent.com/88417140/137612072-6f4f1319-5a77-43d4-a44a-16a7fbc4ebc9.png)
